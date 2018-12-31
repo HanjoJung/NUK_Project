@@ -15,7 +15,7 @@ public class ConnectTest extends AbstractTestCase{
 	@Test
 	public void test() throws Exception {
 		int n = dao.getCount();
-		assertEquals(0, n);
+		assertEquals(2, n);
 	}
 
 }

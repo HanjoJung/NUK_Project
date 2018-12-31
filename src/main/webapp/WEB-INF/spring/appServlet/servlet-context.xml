@@ -29,7 +29,7 @@
 	<context:component-scan base-package="com.jhj.nuk" />
 
 	<!-- Tiles -->
-	<beans:bean id="tilesConfigurer" scope="request"
+	<beans:bean id="tilesConfigurer" scope="singleton"
 		class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
 		<beans:property name="definitions">
 			<beans:list>
