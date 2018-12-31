@@ -35,5 +35,29 @@ public class HomeController {
 		
 		return "home";
 	}
+	  /**
+     * Tiles를 사용하지 않은 일반적인 형태
+     */    
+    @RequestMapping("/test")
+    public String test() {
+        return "test";
+    }    
+    
+    /**
+     * Tiles를 사용(header, left, footer 포함)
+     */        
+    @RequestMapping("/testPage")
+    public String testPage() {
+        return "home.page";
+    }
+    
+    /**
+     * Tiles를 사용(header, left, footer 제외)
+     */    
+    @RequestMapping("/testPart")
+    public String testPart() {
+        return "home.part";
+    }        
+    
 	
 }
