@@ -35,18 +35,24 @@ public class HomeController {
 		
 		return "home";
 	}
+	@RequestMapping(value="bootstrap")
+	public void bootstrap() {
+	}
+	@RequestMapping(value="modal")
+	public void modal() {
+	}
+	
 	  /**
      * Tiles를 사용하지 않은 일반적인 형태
      */    
     @RequestMapping("/test")
-    public String test() {
-        return "test";
+    public void test() {
     }    
     
     /**
      * Tiles를 사용(header, left, footer 포함)
      */        
-    @RequestMapping("/testPage")
+    @RequestMapping("/homePage")
     public String testPage() {
         return "home.page";
     }
@@ -54,7 +60,7 @@ public class HomeController {
     /**
      * Tiles를 사용(header, left, footer 제외)
      */    
-    @RequestMapping("/testPart")
+    @RequestMapping("/homePart")
     public String testPart() {
         return "home.part";
     }        
